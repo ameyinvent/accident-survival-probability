@@ -171,8 +171,6 @@ my_prediction = pd.DataFrame(predictions, PassengerId, columns = ["Survived"])
 
 my_prediction.to_csv("my_prediction.csv", index_label = ["PassengerId"])
 
-print("The end ...")
-
 
 
 
