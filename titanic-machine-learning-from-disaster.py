@@ -165,7 +165,7 @@ for f in range(len(features)):
 rfc.fit(train[features], target)
 predictions = rfc.predict(test[features])
 
-# OUTPUT FILE -----------------------------------------------------------------------------------
+## OUTPUT FILE -----------------------------------------------------------------------------------
 PassengerId =np.array(test["PassengerId"]).astype(int)
 my_prediction = pd.DataFrame(predictions, PassengerId, columns = ["Survived"])
 
